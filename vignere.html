@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vigenère</title>
+    <script src="javascript.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="svg/menu.svg" class="star" alt="asterisc">
+            <a href="index.html">Home</a>
+            <img src="svg/menu.svg" class="star" alt="asterisc">
+            <div class="dropdown"><a>Ciphers</a>
+                <div class="dropdown-content">
+                    <a href="vignere.html">Vigenère</a>
+                    <a href="t9.html">Telephone</a>
+                    <a href="homophonic.html">Homophonic</a>
+                </div>
+            </div>
+            <img src="svg/menu.svg" class="star" alt="asterisc">
+            <a href="design.html">Design</a>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <div class="main-sub-container">
+            <div class="left-sub-container">
+                <h4>Enter key here</h4>
+                <textarea rows="1" cols="50" class="keyword-textarea" autofocus onClick="this.setSelectionRange(0, this.value.length)"></textarea>
+                <div class="title-div">
+                    <h1 class="title-h1">Vigenère</h1>
+                    <div class="color-block-div"></div>
+                </div>
+                <h2 class="add-text-h2">Add Text:</h2>
+                <div class="input_area">
+                    <textarea rows="5" cols="50" class="input-textarea message" onClick="this.setSelectionRange(0, this.value.length)" placeholder="Example text here to encrypt or decryptLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non quam lacus suspendisse faucibus interdum posuere lorem."></textarea>
+                    <textarea class="output" onClick="this.setSelectionRange(0, this.value.length)" placeholder="HXDWYDEDNAWKOAWEYHQCUIYLZBGHCUIYLLZBNPISCDEOYURUVSCAXOC,CRXBWCEOCXUDNRHIDMRQJHVRL,CNGDRNAUDWXGTHWYGRSWFLDLNDFTECOAEYAWPDGRLRBNMLQWDAOSZMA.WRQ" readOnly></textarea>
+                </div>
+            </div>
+            <div class="right-sub-container">
+                <h4 class="how-works-h4">How it works</h4>
+                <div class="description-container">
+                    <div class="description-div">
+                        <p class="description-p"> The Vigenère cipher is a substitution cipher developed by the mathematician Blaise de Vigenère. It is essentially a form of Caesar cipher. The cipher takes the key provided and assigns its each letter to the plaintexts letters, if the key is not long enough it is going to repeat itself until the end of the plaintext. The reason of this is to shit each letter according to the tabula recta.</p>
+                    </div>
+                    <img class="tabula-recta" src="svg/tabluarecta.svg" alt="tabula-recta">
+                </div>
+                <!--                <small class="deciphered-small">Deciphered Text</small>-->
+                <div class="buttons">
+                    <div class="buttons-div">
+                        <button class="encrypt-button" onclick="encode(false)">Encrypt</button>
+
+                        <button class="decrypt-button" onclick="decode(false)">Decrypt</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

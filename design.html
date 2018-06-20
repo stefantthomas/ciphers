@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" class="design">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="svg/menu.svg" class="star" alt="asterisc">
+            <a href="index.html">Home</a>
+            <img src="svg/menu.svg" class="star" alt="asterisc">
+            <div class="dropdown"><a>Ciphers</a>
+                <div class="dropdown-content">
+                    <a href="vignere.html">Vigenère</a>
+                    <a href="t9.html">Telephone</a>
+                    <a href="homophonic.html">Homophonic</a>
+                </div>
+            </div>
+            <img src="svg/menu.svg" class="star" alt="asterisc">
+            <a href="#">Design</a>
+        </nav>
+    </header>
+
+    <div class="main-container design">
+        <div class="main-sub-container">
+            <div class="title-div">
+                <h1 class="title-h1">Design Document</h1>
+                <div class="color-block-div"></div>
+            </div>
+            <div class="typography design-div">
+
+                <div class="left-div">
+                    <h2 class="design-title" style="margin-bottom: 5vh">Typography</h2>
+                    <h1>Heading 1</h1>
+                    <small>Font-size: 6.063em; Color:var(--yellow); Margin:0 0 0 .5em; Line-height:1.2;</small>
+                    <h2>Heading 2</h2>
+                    <small>Font-size: 3.375em; Color:var(--yellow); Margin:1.414em 0 0 .5em; Line-height:1.2;</small>
+                    <h3>Heading 3</h3>
+                    <small>Font-size: 2.25em; Color:var(--yellow); Margin:1.414em 0 0 .5em; Line-height:1.2;</small>
+                    <h4>Heading 4</h4>
+                    <small>Font-size: 1.5em; Color:var(--yellow); Margin:1.414em 0 0 .5em; Line-height:1.2;</small>
+                    <p>This is a paragraph</p>
+                    <small>Font-size:inherit; Color:var(--white/--yellow); Margin-bottom:1.3em;</small>
+                </div>
+                <div class="right-div">
+                    <p style="padding-top: 20vh;">The typography is calculated using the 'Perfect Fifth' ratio which ensures that theres is a hierarchy between the different headings and paragraph. The line height and margin are set up in a way to ensure readability for the user. To write something the default HTML element names are enough, if the color has to be changed, it can be using the color:var(--color) CSS property.</p>
+                </div>
+            </div>
+            <div class="design-div color">
+                <h2 class="design-title">Colors</h2>
+                <div class="colors-div">
+                    <div>
+                        <div class="yellow color-div"></div>
+                        <H4>#FFCC00</H4>
+                        <p>color:var(--yellow)</p>
+                    </div>
+                    <div>
+                        <div class="black color-div"></div>
+                        <H4>#121212</H4>
+                        <p>color:var(--black)</p>
+                    </div>
+                    <div>
+                        <div class="white color-div"></div>
+                        <H4>#EFEFF4</H4>
+                        <p>color:var(--white)</p>
+                    </div>
+                    <div>
+                        <div class="gray color-div"></div>
+                        <H4>#5D5D5D</H4>
+                        <p>color:var(--gray)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="design-div graph-elem">
+                <h2 class="design-title">Graphical Elements</h2>
+
+                <div class="design-subdiv">
+                    <h4>Buttons</h4>
+                    <div class="design-buttons">
+                        <div class="buttons-div">
+                            <button class="encrypt-button">Encrypt</button>
+                            <button class="decrypt-button">Decrypt</button></div>
+                    </div>
+                </div>
+
+                <div class="design-subdiv" style="padding-bottom: 5vh;">
+                    <h4>Color Block</h4>
+
+                </div>
+                <div class="color-block-div"></div>
+
+                <div class="design-subdiv" style="padding-top: 5vh;">
+                    <h4>Navigation</h4>
+                    <div class="nav">
+                        <div class="nav-div">
+                            <div class="dropdown-contents">
+                                <a href="#">Vigènere</a>
+                                <a href="#">Telephone</a>
+                                <a href="#">Homophonic</a>
+                            </div>
+                            <div>
+                                <img src="svg/menu.svg" class="star" alt="asterisc">
+                                <a href="#">Home</a>
+                                <img src="svg/menu.svg" class="star" alt="asterisc">
+                                <a href="#">Ciphers</a>
+                                <img src="svg/menu.svg" class="star" alt="asterisc">
+                                <a href="#">Design</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="design-subdiv classes">
+                    <h4>CSS Classes</h4>
+                    <h4>.main-container</h4>
+                    <p>Using the .main-container classname the we define the main canvas on which the other elements are put on. The .main-container has a witdth and height of 100%, display flex and a yellow color. It is used paired with .main-sub-container.</p>
+                    <h4>.main-sub-container</h4>
+                    <p>The .main-sub-container contains everything that would be displayed on the webpage its width and height ensure a margin where the content doesn't go from edge to edge. It is the child of the div.main-container</p>
+                    <h4>.left-sub-container</h4>
+                    <p>The .left-sub-container has a width of 50% of the .main sub-container and contains all the elements present on the left side of the webpage</p>
+                    <h4>.right-sub-container</h4>
+                    <p>The .right-sub-container has a width of 50% of the .main sub-container and contains all the elements present on the right side of the webpage</p>
+                    <h4>.yellow, .black, .gray, .white</h4>
+                    <p>These classes give the background color of the specified names, it is used to change the color of a certain element</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

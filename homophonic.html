@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homophonic</title>
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <img src="svg/menu.svg" class="star" alt="asterisc">
+            <a href="index.html">Home</a>
+            <img src="svg/menu.svg" class="star" alt="asterisc">
+            <div class="dropdown"><a>Ciphers</a>
+                <div class="dropdown-content">
+                    <a href="vignere.html">Vigenère</a>
+                    <a href="t9.html">Telephone</a>
+                    <a href="homophonic.html">Homophonic</a>
+                </div>
+            </div>
+            <img src="svg/menu.svg" class="star" alt="asterisc">
+            <a href="design.html">Design</a>
+        </nav>
+    </header>
+    <div class="main-container homo">
+        <div class="main-sub-container">
+            <div class="left-sub-container">
+                <div class="description-div">
+                    <p class="description-p"> Since the easiest way to break a standard substitution cipher is to look at the letter frequencies e.g. the letter E is the most used in english the Homophonic Substitution cipher takes the common letters and assigns them multiple variants so the letter frequency will be interrupted.</p>
+                </div>
+                <div class="title-div homo">
+                    <h1 class="title-h1">Homophonic</h1>
+                    <div class="color-block-div"></div>
+                </div>
+            </div>
+            <div class="input_area">
+                <textarea placeholder="Add text" onClick="this.setSelectionRange(0, this.value.length)" rows="1" cols="50" autofocus id="message"></textarea></div>
+            <div class="buttons-vignere">
+                <div class="right-sub-container">
+                    <div class="image homo">
+                        <img src="svg/homophonic.svg" alt="homophonic-cipher">
+                    </div>
+                    <div class="buttons">
+                        <div class="buttons-div">
+                            <button class="encrypt-button" onclick="encodeHomophonic(false)">Encrypt</button>
+                            <button class="decrypt-button" onclick="decodeHomophonic(false)">Decrypt</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<link rel="stylesheet" href="style.css">
+<script src="javascript.js"></script>
